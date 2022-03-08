@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css" />
+           
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+          
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript" language="javascript"></script>
+    
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="JS/wow.min.js" type="text/javascript"></script>
+    <link href="CSS/animate.css" rel="stylesheet" type="text/css"/>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <style>
+        
+
+        .fullscreen_bg {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .fullscreenbg_video {
+            position: absolute;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        #Homerow {
+            padding-top: 7%;
+        }
+
+        #Homerow img {
+            height: 300px;
+            border: 2px solid white;
+            border-radius: 5%;
+            box-shadow: 15px 15px 15px black;
+        }
+
+        #Homerow .col-lg-offset-3 {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 2%;
+            box-shadow: 0px 0px 10px blueviolet;
+
+        }
+
+        #Homerow a i.fa{
+	        color:#ffffff;
+	    }
+
+        #Home {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-bottom: 30px;
+        }
+
+        #TechnicalSummary
+	    {
+	        height:auto;
+	        padding-bottom:40px;
+	        color: white;
+	        background-attachment: fixed;
+	        background-image: url('Images/About_Image.jpg');
+	        background-repeat: no-repeat;
+	        background-size: cover;
+	        font-size: 20px;
+	        line-height: 1.5;
+            margin: auto;
+	    }
+	    #TechnicalSummaryRow
+	    {
+	        padding-top: 7%;
+	    }
+	    #TechnicalSummary h1
+	    {
+	        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	    }
+        
+        #Qualifications {
+            background-attachment: fixed;
+            background-image: url("Images/Qualifications_Image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            height: auto;
+            font-size: 20px;
+            padding-top: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #QualificationsRow{
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        #QualificationsRow .col-lg-offset-1 {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding-top: 40px;
+            box-shadow: 0px 0px 15px brown;
+            border-radius: 2%;
+        }
+
+        #Qualifications table {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        #Qualifications table tr td {
+            padding-bottom: 20px;
+        }
+
+        #Qualifications table tr td:first-child {
+            width: 30%;
+            padding-left: 10px;
+        }
+
+        #Skills {
+            background-attachment: fixed;
+            background-image: url("Images/Skills_Image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 100px;
+        }
+
+        #SkillsRow .col-lg-offset-5{
+            background-color: rgba(255, 255 ,255, 0.7);
+            border-radius: 2%;
+            box-shadow: 0px 0px 15px brown;
+            padding-top: 40px;
+            margin-bottom: 100px;
+        }
+
+        #Skills table {
+            margin-top: 40px;
+        }
+
+        #Skills table tr td{
+            padding-bottom: 40px;
+        }
+
+        #Skills table tr td:first-child{
+            width: 30%;
+            padding-left: 10px;
+        }
+
+        #NonCollegiate {
+            background-attachment: fixed;
+            background-image: url("Images/Qualifications_Image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            margin: auto;
+            font-size: 20px;
+            padding-top: 100px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #NonCollegiateRow .col-lg-offset-1 {
+            background-color: rgba(255, 255 ,255, 0.7);
+            box-shadow: 0px 0px 15px brown;
+            border-radius: 2%;
+            margin-bottom: 100px;
+            padding-top: 40px;
+        }
+
+        #NonCollegiateRow table {
+            margin-top: 40px;
+        }
+
+        #NonCollegiateRow table tr td{
+            padding-bottom: 40px;
+        }
+
+        #NonCollegiateRow table tr td:first-child {
+            width: 30%;
+            padding-left: 10px;
+        }
+
+        #Experience {
+            background-attachment: fixed;
+            background-image: url("Images/Skills_Image.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+            margin: auto;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 100px;
+        }
+
+        #ExperienceRow .col-lg-offset-5{
+            background-color: rgba(255, 255 ,255, 0.7);
+            border-radius: 2%;
+            box-shadow: 0px 0px 15px brown;
+            padding-top: 40px;
+            margin-bottom: 100px;
+        }
+
+        #Experience table {
+            margin-top: 40px;
+        }
+
+        #Experience table tr td{
+            padding-bottom: 40px;
+        }
+
+        #Experience table tr td:first-child{
+            width: 30%;
+            padding-left: 10px;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="z-index:1000;">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header" id="HeaderDiv">
+                  <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Siddharth Patel</a>
+             </div>
+             <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right" style="font-size:13px;padding-right:15px;">
+                      <li><a href="#Home"><b>Intro</b></a></li>
+                      <li><a href="#TechnicalSummary"><b>Technical Summary</b></a></li>
+                      <li><a href="#Qualifications"><b>Qualifications</b></a></li>
+                      <li><a href="#Skills"><b>Skills</b></a></li>
+                      <li><a href="#NonCollegiate"><b>Noncollegiate</b></a></li>
+                      <li><a href="#Experience"><b>Experience</b></a></li>
+                  </ul>
+            </div>
+       </nav>
+    </div>
+    <div id="Home" class="fullscreen_bg">
+        <video src="Video/V1.mp4" autoplay muted loop class="fullscreenbg_video"></video>
+        <div class="row wow slideInDown" data-wow-duration="3s" id="Homerow">
+            <div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-2 col-lg-6 col-md-6 col-sm-8">
+                <center><img src="Images/Siddharth.jpeg" alt="An image of me"></center>
+                <center><h3>I am Siddharth Patel</h3></center>
+                <center>Full Stack Developer Intern at KCS IT Global</center><hr/>
+                <div class="row">
+                    <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-5 col-md-5 col-sm-5">
+                        <center><i class="fa fa-2x fa-phone"><small style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">+91-9173460055</small></i></center>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-6">
+                        <center><i class="fa fa-2x fa-envelope"></i><a href="mailto:siddharth9644@gmail.com" style="color: white;">&nbsp;siddharth9644@gmail.com</a></center>
+                    </div>
+                </div><hr/>
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+                        <center><i class="fa fa-2x fa-map-marker"></i>&nbsp;Krish Compusoft Services,&nbsp;Ashram Road,&nbsp;Navrangpura,&nbsp;Ahmedabad</center>
+                    </div>
+                </div><hr/>
+                <center><a href="#"><i class="fa fa-2x fa-facebook"></i>&nbsp;&nbsp;</a><a href="#"><i class="fa fa-2x fa-twitter"></i></a>&nbsp;&nbsp;<a href="#"><i class="fa fa-2x fa-linkedin">&nbsp;&nbsp;</i></a><a href="#"><i class="fa fa-2x fa-instagram"></i></a></center>
+            </div>
+        </div>
+    </div>
+
+    <div id="TechnicalSummary" class="container-fluid wow bounceIn" data-wow-duration="3s">
+        <div class="row" id="TechnicalSummaryRow">
+             <div class="col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-lg-10 col-md-10 col-sm-10">
+                  <center><h1><i class="fa fa-gears"></i> Technical Summary</h1><hr /></center>
+                  <ul>
+                      <li>A Computer Engineer graduated with 8.96 CGPA from Dr. Jivraj Mehta Institute of Technology in 2021.</li>
+                      <li>Cracked GATE 2021 Examination undertaken by Indian Institute of Technology Bombay.</li>
+                  </ul>
+             </div>
+        </div>
+   </div>
+   <div id="Qualifications" class="container-fluid">
+       <div class="row" id="QualificationsRow">
+            <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                <center><h2><i class="fa fa-object-group"></i>&nbsp;Educational Qualifications</h2></center><hr/>
+                <table class="table table-responsive">
+                    <tr>
+                        <td>Year<br/>2017 - 2021</td>
+                        <td>B.E Computer Engineering from Dr. Jivraj Mehta Institute of Technology (Throughout First class with Distinction)</td>
+                    </tr>
+                    <tr>
+                        <td>Year<br/>2015 - 2017</td>
+                        <td>10+2 with Mathematics from Charotar English Medium School, G.S.H.S.E.B. board with 70%</td>
+                    </tr>
+                    <tr>
+                        <td>Year<br/>2014 - 2015</td>
+                        <td>Secondary Education from English Teaching School, Nadiad with 76%.</td>
+                    </tr>
+                </table>
+            </div>
+       </div>
+   </div>
+   <div id="Skills" class="container-fluid">
+       <div class="row" id="SkillsRow">
+           <div class="col-lg-offset-5 col-lg-6 col-md-offset-5 col-md-6 col-sm-offset-5 col-sm-6 wow slideInRight" data-wow-duration="3s">
+               <center><h2><i class="fa fa-object-group"></i>&nbsp;Technical Skills</h2></center><hr/>
+               <table class="table table-responsive">
+                   <tr>
+                       <td>Programming<br/>Languajges</td>
+                       <td>HTML, CSS, Javascript, Jquery, Bootstrap.</td>   <!--'&nbsp;' can cause trouble here-->
+                    </tr>
+                    <tr>
+                        <td>Secondary<br/> Skills</td>
+                        <td>Data Structures, Algorithms, DBMS, Operating Systems.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="NonCollegiate" class="container-fluid">
+        <div class="row" id="NonCollegiateRow">
+            <div class="col-lg-offset-1 col-lg-6 col-md-offset-1 col-md-6 col-sm-offset-1 col-sm-6 wow slideInLeft" data-wow-duration="3s">
+                <center><h2><i class="fa fa-object-group"></i>&nbsp;Non-Collegiate Activities</h2></center><hr/>
+                <table class="table table-responsive">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="Experience" class="container-fluid">
+        <div class="row" id="ExperienceRow">
+            <div class="col-lg-offset-5 col-lg-6 col-md-offset-5 col-md-6 col-sm-offset-5 col-sm-6 wow slideInRight" data-wow-duration="3s">
+                <center><h2><i class="fa fa-object-group"></i>&nbsp;Experience</h2></center><hr/>
+                <table class="table table-responsive">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
